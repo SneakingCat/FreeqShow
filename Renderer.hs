@@ -30,9 +30,9 @@ row :: Int -> H.Html
 row n =
   H.tr $ do
     H.td $ do
-      H.canvas ! A.id (cpu n) ! A.height "130" ! A.width "361" $ ""
+      H.canvas ! A.id (cpu n) $ ""
     H.td $ do
-      H.canvas ! A.id (cpu $ n + 1) ! A.height "130" ! A.width "361" $ ""
+      H.canvas ! A.id (cpu $ n + 1) $ ""
   where
     cpu n = toValue $ "CPU" ++ show n
     

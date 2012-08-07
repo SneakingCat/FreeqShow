@@ -1,23 +1,26 @@
 FrequencyMeter = function (cpuName) {
-    this.name       = cpuName;
-    this.canvas     = document.getElementById(cpuName);
-    this.context    = this.canvas.getContext("2d");
-    this.bgColor    = "#040404";
-    this.darkPixel  = "#0f3700";
-    this.litPixel   = "#358800";
-    this.deadCross  = "#ff0000";
-    this.font       = "12px Courier";
-    this.pixelWidth = 5;
-    this.crossWidth = 10;
-    this.space      = 1;
-    this.lines      = 10;
-    this.columns    = 60;
-    this.textSpace  = 14;
+    this.name          = cpuName;
+    this.canvas        = document.getElementById(cpuName);
+    this.canvas.width  = 361;
+    this.canvas.height = 130;
 
-    this.minFreq    = 0;
-    this.maxFreq    = 0;
-    this.range      = 0;
-    this.samples    = new Array();
+    this.context       = this.canvas.getContext("2d");
+    this.bgColor       = "#040404";
+    this.darkPixel     = "#0f3700";
+    this.litPixel      = "#358800";
+    this.deadCross     = "#ff0000";
+    this.font          = "12px Courier";
+    this.pixelWidth    = 5;
+    this.crossWidth    = 10;
+    this.space         = 1;
+    this.lines         = 10;
+    this.columns       = 60;
+    this.textSpace     = 14;
+
+    this.minFreq       = 0;
+    this.maxFreq       = 0;
+    this.range         = 0;
+    this.samples       = new Array();
 };
 
 FrequencyMeter.prototype.draw = function (obj) {
