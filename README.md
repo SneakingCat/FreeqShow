@@ -34,3 +34,9 @@ happstack-lite (Web server)
 websockets (Web socket server)
 aeson (JSON coder/decoder)
 
+TODO
+----
+Enhance (or replace) the graphical display so the scaling algorithm's
+intent is shown beside the current running frequency. This is the value 
+that can be sampled from the file <cpu path>/scaling_cur_freq.
+
