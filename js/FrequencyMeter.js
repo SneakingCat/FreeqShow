@@ -1,3 +1,7 @@
+/*
+** Copyright (C) 2012, Patrik Sandahl
+** sneakingcatsw@gmail.com
+*/
 FrequencyMeter = function (cpuName) {
     this.name          = cpuName;
     this.canvas        = document.getElementById(cpuName);

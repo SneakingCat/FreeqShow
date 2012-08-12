@@ -1,3 +1,5 @@
+-- Copyright (C) 2012, Patrik Sandahl
+-- sneakingcatsw@gmail.com
 module Main where
 
 import Collector

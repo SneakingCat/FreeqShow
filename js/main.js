@@ -1,3 +1,7 @@
+/*
+** Copyright (C) 2012, Patrik Sandahl
+** sneakingcatsw@gmail.com
+*/
 pageLoaded = function (cpus) {
     var meterMap = new Array();
     cpus.forEach(function(cpu) {meterMap[cpu] =  new FrequencyMeter(cpu)});
